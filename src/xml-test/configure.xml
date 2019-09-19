@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configure>
+  <switch>0</switch>
+  <jobs>
+    <job-ID>0</job-ID>
+    <parameter-n>1</parameter-n>
+    <parameter-N>4</parameter-N>
+    <parameter-p>paratera</parameter-p>
+    <jobshell-Path>./hello</jobshell-Path>
+    <job-launchID>0</job-launchID>
+    <job-state>0</job-state>
+  </jobs>
+</configure>

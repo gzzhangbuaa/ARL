@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configure>
+  <switch>1</switch>
+  <job>
+    <job-ID>0</job-ID>
+    <parameter-N>1</parameter-N>
+    <parameter-n>4</parameter-n>
+    <parameter-p>paratera</parameter-p>
+    <jobshell-Path>./hellolaunch.sh</jobshell-Path>
+    <limit-time>00:00:00:00</limit-time>
+    <job-launchID>0</job-launchID>
+    <job-state>0</job-state>
+  </job>
+</configure>
