@@ -13,7 +13,7 @@ Besides, a static library for recording the completed jobs, and an executable of
     generate the tool:configure-gen and the executable file ARLTool
 
 * **Compile to generate the static library**
-    execute the file ***.\/api\/make.sh***  
+    execute the file ***[./api/make.sh]***  
     generate the library ***arltoolapi.a*** 
     
 * **Source code modification or instrumentation**
