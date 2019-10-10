@@ -9,12 +9,12 @@ Besides, a static library for recording the completed jobs, and an executable of
     
 * **Compile to generate xml template creator & ARLTool executables**
 
-    execute the file ***./src/make.sh***
-    generate the tool:configure-gen and the executable file ARLTool
+    execute the file **./src/make.sh**
+    generate the tool:configure-gen and the executable file **ARLTool**
 
 * **Compile to generate the static library**
-    execute the file ***[./api/make.sh]***  
-    generate the library ***arltoolapi.a*** 
+    execute the file **./api/make.sh**  
+    generate the library **arltoolapi.a**
     
 * **Source code modification or instrumentation**
   
