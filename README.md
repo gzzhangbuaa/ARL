@@ -36,7 +36,7 @@ Besides, a static library for recording the completed jobs, and an executable of
     ARL would consider current execution occurred failure (program stall)
     job-launchID, job-state here remained for the future.
     
-  * **Sumbit ARL job**
+* **Sumbit ARL job**
 
     lastly, use src/autoReLaunch.sh to submit the job of ARL
     
