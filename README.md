@@ -7,10 +7,10 @@ Besides, a static library for recording the completed jobs, and an executable of
     
 ### Introduction of how to use it.
     
-    1. execute the file ./src/make.sh
+* **execute the file ./src/make.sh**
 generate the tool:configure-gen and the executable file ARLTool
 
-    2. execute the file ./api/make.sh
+* **execute the file ./api/make.sh**
     
   generate the library arltoolapi.a 
   
