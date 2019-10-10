@@ -29,7 +29,7 @@ Besides, a static library for recording the completed jobs, and an executable of
     
     get configure.xml, according the requirement of the user to modify this configuration file
     
-    label ***Switch*** default value is 1, represent enable the dual-checker mechanism
+    label ***\<Switch\>*** default value is 1, represent enable the dual-checker mechanism
     
     every job tuple correspond to an independent job
     
