@@ -1,5 +1,8 @@
-# ARL
-    'Introduction of how to use it.'
+### ARL
+    Automatic Re-Launcher is a user-level mechanism designed for the failure detection and failed jobs re-submission automatically.
+    It is applied on the MPI applications in HPC systems.
+    
+    Introduction of how to use it.'
     
     1. execute the file ./src/make.sh
 generate the tool:configure-gen and the executable file ARLTool
