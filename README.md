@@ -13,8 +13,8 @@ Besides, a static library for recording the completed jobs, and an executable of
     generate the tool:configure-gen and the executable file ARLTool
 
 * **Compile to generate the static library**
-    execute the file ***./api/make.sh***  
-    generate the library arltoolapi.a 
+    execute the file ***.\/api\/make.sh***  
+    generate the library ***arltoolapi.a*** 
     
 * **Source code modification or instrumentation**
   
@@ -23,8 +23,8 @@ Besides, a static library for recording the completed jobs, and an executable of
 * **Custom configuration**
   
         use configure-gen tool to generate the XML template of configureation
-        ***./configure-gen*** 
-        get ***configure.xml***
+        ./configure-gen 
+        get configure.xml
         according the requirement of the user to modify this configuration file
         
         label Switch default value is 1, represent enable the dual-checker mechanism
