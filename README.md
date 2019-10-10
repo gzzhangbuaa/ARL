@@ -43,7 +43,7 @@ Besides, a static library for recording the completed jobs, and an executable of
     ***\<limit-time\>*** is a threshold preset by the user, when the actual execution time beyond this value
     ARL would consider current execution occurred failure (program stall)
     
-    ***\<job-launchID\>***, ***job-state*** here remained for the future.
+    ***\<job-launchID\>***, ***\<job-state\>*** here remained for the future.
     
 * **Sumbit ARL job**
 
