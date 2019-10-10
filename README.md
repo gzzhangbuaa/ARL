@@ -1,7 +1,9 @@
 ### ARL
 
 Automatic Re-Launcher is a user-level mechanism designed for the failure detection and failed jobs re-submission automatically.
+
 It is applied on the MPI applications in HPC systems to help the end-users who has no high privilege to achieve above procedure.
+
 It contains a xml template creator(independent executable file) which is responsible to provide a standardformatted configuration.
 Besides, a static library for recording the completed jobs, and an executable of the state checker.
     
