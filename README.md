@@ -8,6 +8,7 @@ Besides, a static library for recording the completed jobs, and an executable of
 ### Introduction of how to use it.
     
 * **execute the file ./src/make.sh**
+
 generate the tool:configure-gen and the executable file ARLTool
 
 * **execute the file ./api/make.sh**
