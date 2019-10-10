@@ -27,19 +27,22 @@ Besides, a static library for recording the completed jobs, and an executable of
     
     ./configure-gen 
     
-    get configure.xml
-    
-    according the requirement of the user to modify this configuration file
+    get configure.xml, according the requirement of the user to modify this configuration file
     
     label ***Switch*** default value is 1, represent enable the dual-checker mechanism
     
     every job tuple correspond to an independent job
+    
     label ***job-ID*** is an interger value, it is unnique and assigned by the user for make a
     distinction between different jobs.
+    
     ***parameter-N*** refers to the number of computer nodes
+    
     ***parameter-n*** refers to the number of processes
+    
     ***limit-time*** is a threshold preset by the user, when the actual execution time beyond this value
     ARL would consider current execution occurred failure (program stall)
+    
     ***job-launchID***, ***job-state*** here remained for the future.
     
 * **Sumbit ARL job**
