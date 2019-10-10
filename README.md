@@ -33,20 +33,20 @@ Besides, a static library for recording the completed jobs, and an executable of
     
     every job tuple correspond to an independent job
     
-    label ***job-ID*** is an interger value, it is unnique and assigned by the user for make a
+    label ***\<job-ID\>*** is an interger value, it is unnique and assigned by the user for make a
     distinction between different jobs.
     
-    ***parameter-N*** refers to the number of computer nodes
+    ***\<parameter-N\>*** refers to the number of computer nodes
     
-    ***parameter-n*** refers to the number of processes
+    ***\<parameter-n\>*** refers to the number of processes
     
-    ***limit-time*** is a threshold preset by the user, when the actual execution time beyond this value
+    ***\<limit-time\>*** is a threshold preset by the user, when the actual execution time beyond this value
     ARL would consider current execution occurred failure (program stall)
     
-    ***job-launchID***, ***job-state*** here remained for the future.
+    ***\<job-launchID\>***, ***job-state*** here remained for the future.
     
 * **Sumbit ARL job**
 
-    lastly, use src/autoReLaunch.sh to submit the job of ARL
+    lastly, use **src/autoReLaunch.sh** to submit the job of ARL
     
         yhbatch -N 1 -n 1 -p paratera ./autoReLaunch.sh
