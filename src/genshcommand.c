@@ -3,14 +3,6 @@
 #include <libxml/xmlmemory.h>
 #define CONF_FILE	"./configure.xml"
 
-/*
-int genShCommand(char *confpath, int nums, ARL_job *arl_jobs);
-int main()
-{
-	ARL_job *arl_jobs = NULL;
-	genShCommand(CONF_FILE, 2, arl_jobs);
-}
-*/
 long getruntime(char *runtime)
 {
 	if(runtime == NULL)

@@ -26,9 +26,6 @@ int main(int argc, char * argv[])
 	MPI_Comm_rank(MPI_COMM_WORLD, &iproc);
 
 	MPI_Get_processor_name(proc_name, &nameLength);
-	//printf("Hello World, I am host %s with rank %d of%d\n", proc_name, iproc, nproc);
-	
-	
 	for(i=0; i < 100; i++)
 	{
 		result += 1;

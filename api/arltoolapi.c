@@ -10,10 +10,7 @@
 
 
 #include "../include/share.h"
-//#include "arltoolapi.h"
 
-
-//#include "arltoolapi.h"
 
 int leaderflag = FALSE;
 int jobID = -1;
@@ -107,7 +104,6 @@ int ARL_Init(int argc, char * argv[])
 	
 	int rank;
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-	//printf("[DEBUG_INFO]: my rank is %d\n", rank);
 	if(rank == 0)
 	{
 		leaderflag = TRUE;
@@ -123,7 +119,6 @@ int ARL_Init(int argc, char * argv[])
 
 int ARL_Finalize()
 {
-	//printf("[DEBUG_INFO]:here coming!\n");
 	int rst = FALSE;
 	if(leaderflag)
 	{

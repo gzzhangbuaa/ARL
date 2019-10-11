@@ -1,16 +1,5 @@
 #include "interface.h"
 
-/*
-#include <libxml/parser.h>
-#include <libxml/xpath.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-
-#define FALSE 0
-#define TRUE 1
-*/
-
 xmlDocPtr getdoc(char *docname)
 {
 	xmlDocPtr doc;
@@ -96,9 +85,6 @@ int findInXml1(char *docname, char* target)
 	return (0);
 }
 
-
-
-
 int findInXml(char *docname, char* keyword)
 {
 	xmlDocPtr doc;
@@ -132,48 +118,6 @@ int findInXml(char *docname, char* keyword)
 	xmlCleanupParser();
 	return (0);
 }
-
-
-/********If the switch in configure.xml is 0, just use master monitor**************/
-/********If the switch in configure.xml is 1, use double monitors (Master and backup)*********/
-/*
-int getDMS(char *docname, char* keyword)
-{
-	int button = 0;
-        xmlDocPtr doc;
-        printf("[DEBUG_INFO]:keyword is %s\n", keyword);
-
-        xmlChar *xpath = (xmlChar *)keyword;
-        xmlNodeSetPtr nodeset;
-        xmlXPathObjectPtr result;
-        int i;
-        xmlChar *keyvalue;
-
-        if((access(docname, 0)) == -1)
-        {
-                printf("[DEBGU_INFO]:doc %s dosen't exists\n", docname);
-                return(-1);
-        }
-        doc = getdoc(docname);
-        result = getnodeset(doc, xpath);
-        if(result)
-        {
-                nodeset = result->nodesetval;
-                for(i = 0; i < nodeset->nodeNr; i++)
-                {
-                        keyvalue = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-                        printf("keyword is %s, key-value:%s\n", keyword, keyvalue);
-			button = atoi(keyvalue);	
-                        xmlFree(keyvalue);
-                }
-                xmlXPathFreeObject(result);
-        }
-        xmlFreeDoc(doc);
-        xmlCleanupParser();
-        return (0);
-}
-*/
-
 
 int getDMS(char *docname, char *keyword)
 {
@@ -251,24 +195,3 @@ int getDMS(char *docname, char *keyword)
 }
 
 
-/*
-int main()
-{
-		
-	findInXml1("configure.xml", "job-ID");
-	findInXml1("configure.xml", "state");
-	findInXml1("configure.xml", "job-launchID");
-	
-	findInXml("configure.xml", "//job-ID");	
-	findInXml("configure.xml", "//state");
-	findInXml("configure.xml", "/jobs/job-ID");
-	
-	findInXml("configure.xml", "//jobs//job-ID");
-	findInXml("configure.xml", "//job-launchID");
-	
-	findInXml("configure.xml", "job-ID");
-	findInXml("configure.xml", "//switch");
-	
-	getDMS("configure.xml", "switch");
-}
-*/

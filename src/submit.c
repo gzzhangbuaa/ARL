@@ -109,22 +109,19 @@ int getLaunchID(char *file, char *id)
 		{
 			continue;
 		}
-		//printf("[DEBUG_INFO]: get line:%s\n", line);
 		char *token;
 		/**	be careful here the delimiter is blank and newlines**/
 		for(token = strsep(&line, " ,\n");token != NULL; token = strsep(&line, " ,\n"))
 		{
-			//printf("[DEBUG_INFO]:splited token is:%s\n", token);
-			//printf("strspn result is %d, strlen result is %d\n", strspn(token, "0123456789"), strlen(token));
 			if(strspn(token, "0123456789") == strlen(token))
 			{
-				//printf("[DEBUG_INFO]:This token is a digital\n");
+				printf("[DEBUG_INFO]:This token is a digital\n");
 				strcpy(id, token);
 				break;
 			}
 			else
 			{
-				//printf("[DEBUG_INFO]:This token is a string\n");
+				printf("[DEBUG_INFO]:This token is a string\n");
 			}
 		}
 		

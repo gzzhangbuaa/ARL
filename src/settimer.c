@@ -7,30 +7,16 @@
 extern int enablecheck;
 extern int aliveflag;
 extern int watchflag;
-
 extern int finishflag;
 
 void addTimer();
 int SIGProcess();
 void setTimer();
-
 static void SIGHandler(int sig);
 static void checkAlive(int sig);
-
 static struct itimerval oldtv;
 static struct sigaction sa;
 static struct itimerval itv;
-
-
-/*
-void main()
-{
-	addTimer(10);
-	setTimer(30);
-	while(1)
-	{}
-}
-*/
 
 void addTimer(int timeout)
 {

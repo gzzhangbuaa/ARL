@@ -47,15 +47,13 @@ MPI_Comm_size(MPI_COMM_WORLD, &nproc);
 MPI_Comm_rank(MPI_COMM_WORLD, &iproc);
 
 MPI_Get_processor_name(proc_name, &nameLength);
-//printf("Hello World, I am host %s with rank %d of%d\n", proc_name, iproc, nproc);
-
-	for(i=0; i < 100; i++)
-	{
-		result += 1;
-		printf("Hello World, I am host %s with rank %d of%d\n", proc_name, iproc, nproc);
-		printf("%d\n", result);
-		sleep(1);
-	}
+for(i=0; i < 100; i++)
+{
+	result += 1;
+	printf("Hello World, I am host %s with rank %d of%d\n", proc_name, iproc, nproc);
+	printf("%d\n", result);
+	sleep(1);
+}
 
 MPI_Finalize();
 return 0;

@@ -1,6 +1,3 @@
-//#include <stdio.h>
-//#include <libxml/parser.h>
-//#include <libxml/tree.h>
 #include <stdlib.h>
 #include "interface.h"
 
